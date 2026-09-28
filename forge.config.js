@@ -41,4 +41,17 @@ export default {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+   publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'danielz0102',
+          name: 'my-electron-app'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };
